@@ -6,7 +6,7 @@ if ( File.exist?(export_dir))
   `rm -rf #{export_dir}`
 end
 
-`svn co http://svn.simb.net/easyMVC/framework/tags/CURRENT ./#{export_dir}`
+`svn export http://svn.simb.net/easyMVC/framework/tags/CURRENT ./#{export_dir}`
 
 source = File.readlines(export_dir + "/SOURCE")
 
