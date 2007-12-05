@@ -1,3 +1,6 @@
+/*
+${copyright}
+*/
 package com.simbdev.easyMVC.utils
 {
 	import mx.utils.ObjectUtil;

@@ -1,4 +1,7 @@
 /*
+${copyright}
+*/
+/*
 this file is meant to be a template for your own modellocator in your applciation.  feel free to copy this over and start adding your variables.
 */
 package com.simbdev.easyMVC.model

@@ -1,3 +1,6 @@
+/*
+${copyright}
+*/
 package com.simbdev.easyMVC.control {
 	import mx.core.Application;
 	import com.simbdev.easyMVC.utils.ClassUtil;

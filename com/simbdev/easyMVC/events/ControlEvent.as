@@ -1,3 +1,6 @@
+/*
+${copyright}
+*/
 package com.simbdev.easyMVC.events
 {
 	import flash.events.Event;

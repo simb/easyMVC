@@ -1,3 +1,6 @@
+/*
+${copyright}
+*/
 package com.simbdev.easyMVC.business
 {
 	import mx.rpc.IResponder;
