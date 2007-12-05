@@ -1,0 +1,16 @@
+package com.simbdev.easyMVC.events
+{
+	import flash.events.Event;
+	
+	public class ControlEvent extends Event
+	{
+		public var data:Object;
+		public var onSuccess:Function;
+		public var onFailure:Function;
+		
+		public function ControlEvent(type:String){
+			super(type, true, true);
+		}
+		
+	}
+}
