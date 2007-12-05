@@ -1,5 +1,5 @@
 #!/usr/bin/ruby
-export_dir = "release"
+export_dir = "easyMVC_0_1"
 
 if ( File.exist?(export_dir))
   puts "Removed #{export_dir} directory"
@@ -19,3 +19,6 @@ Dir.glob("#{export_dir}/**/*.as").each do |path|
   
   File.open(path, 'w'){|f| f.write lines}
 end
+
+`zip -r #{export_dir} #{export_dir}`
+`rm -rf #{export_dir}`
