@@ -1,3 +1,4 @@
 #!/usr/bin/ruby
 puts `find ./ -name *.as -o -name *.mxml | xargs svn propset license -F LICENSE`
 puts `find ./ -name *.as -o -name *.mxml | xargs svn propset copyright -F COPYRIGHT`
+puts `find ./ -name *.as -o -name *.mxml | xargs svn propset source -F SOURCE`
