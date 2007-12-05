@@ -1,0 +1,21 @@
+#!/usr/bin/ruby
+export_dir = "release"
+
+if ( File.exist?(export_dir))
+  puts "Removed #{export_dir} directory"
+  `rm -rf #{export_dir}`
+end
+
+`svn co http://svn.simb.net/easyMVC/framework/tags/CURRENT ./#{export_dir}`
+
+source = File.readlines(export_dir + "/SOURCE")
+
+Dir.glob("#{export_dir}/**/*.as").each do |path|
+  lines = File.readlines(path)
+  puts path
+  #if lines.match(/\$\{copyright\}/)
+    lines.collect!{|l| l.gsub(/\$\{copyright\}/, source.to_s)}
+  #end
+  
+  File.open(path, 'w'){|f| f.write lines}
+end
