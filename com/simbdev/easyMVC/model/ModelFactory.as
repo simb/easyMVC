@@ -1,3 +1,6 @@
+/*
+${copyright}
+*/
 package com.simbdev.easyMVC.model
 {
 	import com.simbdev.easyMVC.utils.ClassUtil;
