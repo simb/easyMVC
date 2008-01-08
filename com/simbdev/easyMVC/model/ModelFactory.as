@@ -16,7 +16,6 @@ package com.simbdev.easyMVC.model
 			if ( models[className] != null){
 				throw new Error("This model: "+ className + " can only be instatiated once");
 			}else{
-				trace ( className );
 				models[className] = this;
 			}
 		}
