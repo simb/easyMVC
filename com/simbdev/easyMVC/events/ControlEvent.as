@@ -11,8 +11,8 @@ package com.simbdev.easyMVC.events
 		public var onSuccess:Function;
 		public var onFailure:Function;
 		
-		public function ControlEvent(type:String){
-			super(type, true, true);
+		public function ControlEvent(type:String, bubbles:Boolean=true, cancelable:Boolean=true){
+			super(type, bubbles, cancelable);
 		}
 		
 	}

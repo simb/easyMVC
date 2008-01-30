@@ -2,9 +2,12 @@
 ${copyright}
 */
 package com.simbdev.easyMVC.control {
-	import mx.core.Application;
 	import com.simbdev.easyMVC.utils.ClassUtil;
+	
+	import flash.events.Event;
 	import flash.utils.Dictionary;
+	
+	import mx.core.Application;
 	
 	public class ControllerFactory {
 		
@@ -31,5 +34,8 @@ package com.simbdev.easyMVC.control {
 			Application.application.addEventListener(event,func);
 		}
 		
+		protected function dispatchEvent(event:Event):void{
+			Application.application.dispatchEvent(event);
+		}
 	}
 }
