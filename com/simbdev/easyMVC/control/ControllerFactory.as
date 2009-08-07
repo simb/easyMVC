@@ -31,11 +31,13 @@ package com.simbdev.easyMVC.control {
 		}
 		
 		protected function addEventHandler(event:String, func:Function):void{
-			Application.application.addEventListener(event,func);
+			//Application.application.addEventListener(event,func);
+			FlexGlobals.topLevelApplication.addEventListener(event,func);
 		}
 		
 		protected function dispatchEvent(event:Event):void{
-			Application.application.dispatchEvent(event);
+			//Application.application.dispatchEvent(event);
+			FlexGlobals.topLevelApplication.dispatchEvent(event);
 		}
 	}
 }
